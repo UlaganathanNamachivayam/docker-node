@@ -13,6 +13,10 @@ $ chmod 600 privatekey.pem
 $ ssh-keygen -f privatekey.pem -y > publickey.ssh
 `````
 
+If behind a proxy enable proxy in docker.
+In Ubuntu, edit /etc/default/docker and add
+export http_proxy="http://yourProxyHost:yourProxyPort"
+
 Build new image, run it and test it
 
 ```shell
