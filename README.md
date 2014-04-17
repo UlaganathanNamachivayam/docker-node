@@ -15,7 +15,9 @@ $ ssh-keygen -f privatekey.pem -y > publickey.ssh
 
 If behind a proxy enable proxy in docker.
 In Ubuntu, edit /etc/default/docker and add
+```shell
 export http_proxy="http://yourProxyHost:yourProxyPort"
+`````
 
 Build new image, run it and test it
 
